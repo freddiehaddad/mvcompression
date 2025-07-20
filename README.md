@@ -2,7 +2,7 @@
 
 [![Rust](https://img.shields.io/badge/rust-1.70+-blue.svg)](https://www.rust-lang.org)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE)
-[![Documentation](https://docs.rs/mvcompression/badge.svg)](https://docs.rs/mvcompression)
+[![Documentation](https://img.shields.io/badge/docs-pending%20publication-orange.svg)](#documentation)
 
 A thread-safe, lock-free adaptive compression decision system that learns from past compression performance to intelligently decide whether to compress future data blocks.
 
@@ -246,6 +246,23 @@ cargo build --release
 perf record --call-graph dwarf target/release/examples/basic_usage
 ```
 
+### Documentation
+
+To view the full API documentation locally:
+
+```bash
+# Generate and open documentation in your browser
+cargo doc --open
+```
+
+The documentation includes:
+- Complete API reference with examples
+- Algorithm implementation details
+- Thread safety guarantees
+- Performance characteristics
+
+*Note: Online documentation will be available at [docs.rs](https://docs.rs/mvcompression) once the crate is published.*
+
 ## 📝 License
 
 This project is licensed under either of
@@ -283,7 +300,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 - [Original Algorithm Research](docs/algorithm.md) *(if available)*
 - [Performance Analysis](docs/performance.md) *(if available)*
-- [API Documentation](https://docs.rs/mvcompression)
+- API Documentation: Run `cargo doc --open` to view locally
 
 ## 🔗 Related Projects
 
