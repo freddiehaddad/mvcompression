@@ -1,0 +1,37 @@
+[package]
+name = "mvcompression"
+version = "0.1.0"
+edition = "2021"
+authors = ["Freddie Haddad <freddie.haddad@outlook.com>"]
+description = "A thread-safe adaptive compression decision system that learns from past performance"
+documentation = "https://docs.rs/mvcompression"
+readme = "README.md"
+homepage = "https://github.com/yourusername/mvcompression"
+repository = "https://github.com/yourusername/mvcompression"
+license = "MIT OR Apache-2.0"
+keywords = ["compression", "adaptive", "thread-safe", "lock-free", "algorithm"]
+categories = ["algorithms", "concurrency", "compression", "data-structures"]
+exclude = [
+    "target/*",
+    ".git/*",
+    ".gitignore",
+    "*.log"
+]
+
+[lib]
+name = "mvcompression"
+path = "src/lib.rs"
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
+
+[dependencies]
+
+[dev-dependencies]
+# Add criterion for benchmarking if needed
+# criterion = "0.5"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
