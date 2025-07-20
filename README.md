@@ -380,8 +380,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## 📚 References
 
-- [Original Algorithm Research](docs/algorithm.md) *(if available)*
-- [Performance Analysis](docs/performance.md) *(if available)*
 - API Documentation: Run `cargo doc --open` to view locally
 
 ## 🔗 Related Projects
